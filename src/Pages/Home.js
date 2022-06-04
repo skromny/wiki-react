@@ -19,7 +19,6 @@ export const Home = () => {
 					search
 				}
 			} } = await api.get(`api.php?action=query&prop=info&inprop=url&meta=siteinfo&origin=*&list=search&format=json&srlimit=20&srsearch=${searchQuery}`);
-			console.log(general);
 			console.log(search);
 			setSearchResult(search);
 		} catch (error) {
